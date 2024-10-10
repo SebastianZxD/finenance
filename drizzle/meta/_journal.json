@@ -8,6 +8,13 @@
       "when": 1728584433741,
       "tag": "0000_bent_toad_men",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1728585350508,
+      "tag": "0001_loose_longshot",
+      "breakpoints": true
     }
   ]
 }

@@ -1,8 +1,9 @@
+"use client";
 
 export default function Home() {
   return (
     <div>
-      Dashboard Page
+      <h1>Dashboard</h1>
     </div>
   );
 }
