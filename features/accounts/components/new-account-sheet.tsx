@@ -11,7 +11,7 @@ import {
   SheetTitle,
 } from "@/components/ui/sheet";
 import { insertAccountSchema } from "@/db/schema";
-import { useCreateAccount } from "@/features/accounts/hooks/use-create-account";
+import { useCreateAccount } from "@/features/accounts/api/use-create-account";
 
 const formSchema = insertAccountSchema.pick({
   name: true,

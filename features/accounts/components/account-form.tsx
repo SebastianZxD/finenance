@@ -77,16 +77,16 @@ export const AccountForm = ({
           {id ? "Save changes" : "Create account"}
         </Button>
         {!!id && (
-        <Button
-          type="button"
-          disabled={disabled}
-          onClick={handleDelete}
-          className="w-full"
-          variant="outline"
-        >
-          <Trash className="size-4 mr-2"/>
-          Delete Account
-        </Button>
+          <Button
+            type="button"
+            disabled={disabled}
+            onClick={handleDelete}
+            className="w-full"
+            variant="outline"
+          >
+            <Trash className="size-4 mr-2"/>
+            Delete Account
+          </Button>
         )}
       </form>
     </Form>
