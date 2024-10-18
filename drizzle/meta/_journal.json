@@ -8,6 +8,13 @@
       "when": 1729111970594,
       "tag": "0000_groovy_ezekiel_stane",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1729170675875,
+      "tag": "0001_real_black_bolt",
+      "breakpoints": true
     }
   ]
 }
