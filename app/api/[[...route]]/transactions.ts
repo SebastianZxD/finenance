@@ -257,15 +257,13 @@ const app = new Hono()
     );
 
     const [data] = await db
-      .delete(categories)
+      .with(transactionsToDelete)
+      .delete(transactions)
       .where(
-        and(
-          eq(categories.userId, auth.userId),
-          eq(categories.id, id)
-        ),
+        inArray(transactions.id, sql`(select id from ${transactionsToDelete})`)
       )
       .returning({
-        id: categories.id,
+        id: transactions.id,
       });
 
     if (!data) {
