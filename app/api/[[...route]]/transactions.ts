@@ -54,7 +54,7 @@ const app = new Hono()
     ))
     .leftJoin(categories, eq(
       transactions.categoryId, 
-      accounts.id,
+      categories.id,
     ))
     .where(
       and(
@@ -193,7 +193,7 @@ const app = new Hono()
 
       const data = await db
         .with(transactionsToDelete)
-        .delete(categories)
+        .delete(transactions)
         .where(
           inArray(transactions.id, sql`(select id from ${transactionsToDelete})`)
         )

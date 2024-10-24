@@ -131,7 +131,7 @@ export const TransactionForm = ({
               </FormLabel>
               <FormControl>
                 <Select
-                  placeholder="Select an account"
+                  placeholder="Select a category"
                   options={categoryOptions}
                   onCreate={onCreateCategory}
                   value={field.value}

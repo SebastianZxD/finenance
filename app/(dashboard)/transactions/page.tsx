@@ -20,6 +20,7 @@ import { useBulkDeleteTransactions } from "@/features/transactions/api/use-bulk-
 
 const TransactionsPage = () => {
   const newTransaction = useNewTransaction();
+  console.log("Im here")
   const deleteTransactions = useBulkDeleteTransactions();
   const transactionsQuery = useGetTransactions();
   const transactions = transactionsQuery.data || [];
@@ -59,7 +60,7 @@ const TransactionsPage = () => {
         </CardHeader>
         <CardContent>
           <DataTable
-            filterKey="name"
+            filterKey="payee"
             columns={columns} 
             data={transactions} 
             onDelete={(row) => {
