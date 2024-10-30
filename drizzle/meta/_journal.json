@@ -8,6 +8,13 @@
       "when": 1729697750440,
       "tag": "0000_friendly_gwen_stacy",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1730322269990,
+      "tag": "0001_small_virginia_dare",
+      "breakpoints": true
     }
   ]
 }
