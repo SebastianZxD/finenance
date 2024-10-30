@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-unused-vars */
+
 import { Hono } from 'hono'
 import { handle } from 'hono/vercel'
 
